@@ -21,11 +21,19 @@ h1 {
         tr:nth-child(2n-1) {
             background-color: #ddd;
         }
+        tr.active {
+            background-color: yellow;
+        }
     }
 
     img {
         border-radius: 3px;
         border: 1px solid black;
         margin-bottom: 10px;
+    }
+
+    &.back {
+        height: 408px;
+        background-color: green;
     }
 }
