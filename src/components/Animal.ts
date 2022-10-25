@@ -1,4 +1,6 @@
 export default class Animal {
+    [key: string]: number | string;
+
     name: string;
     image: string;
     size: number;
@@ -24,5 +26,4 @@ export default class Animal {
         this.offspring = offspring;
         this.speed = speed;
     }
-
 }

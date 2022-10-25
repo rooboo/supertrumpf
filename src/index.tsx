@@ -5,6 +5,8 @@ import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+
+// note that strict-mode instantiates the components twice to check for any problems
 root.render(
   <React.StrictMode>
     <App />

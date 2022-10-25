@@ -3,14 +3,12 @@ import * as React from 'react';
 import './Card.scss';
 import Animal from './Animal';
 
-interface CardProps {
+export default function Card({animal, uncovered, selectedProperty, onSelectProperty}: {
     animal: Animal,
     uncovered: boolean,
     selectedProperty: string,
     onSelectProperty?: (prop: string) => void,
-}
-
-export default function Card({animal, uncovered, selectedProperty, onSelectProperty}: CardProps): JSX.Element {
+}): JSX.Element {
 
     const back = (<div className='card back'/>);
     let front: JSX.Element;
@@ -24,15 +22,15 @@ export default function Card({animal, uncovered, selectedProperty, onSelectPrope
                              src={`${process.env.PUBLIC_URL}/${animal.image}`}/>}
                     <table>
                         <tbody>
-                        {Object.entries(Animal.properties).map(property => {
-                            const propKey = property[0];
-                            const val = Object.entries(animal).find(prop => prop[0] === propKey);
-                            if (Array.isArray(val) && val.length > 1) {
+                        {Object.entries(Animal.properties).map(([propKey, {label, unit}]) => {
+                            const val = Object.entries(animal).find(([prop]) => prop === propKey);
+                            if (val && val.length > 1) {
+                                const name = val[1];
                                 return (<tr key={propKey}
                                             className={selectedProperty === propKey ? 'active' : ''}
                                             onClick={() => onSelectProperty?.(propKey)}>
-                                    <td>{property[1].label}</td>
-                                    <td>{val[1]}&nbsp;{property[1].unit}</td>
+                                    <td>{label}</td>
+                                    <td>{name}&nbsp;{unit}</td>
                                 </tr>);
                             }
                         })}
