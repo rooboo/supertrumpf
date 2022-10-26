@@ -152,7 +152,11 @@ export default class Game extends React.Component<GameProps, GameState> {
                         selectedProperty={selectedProperty}
                         onSelectProperty={this.getSelectedPropertyHandler().bind(this)}
                     />
-                    <Card animal={computer[0]} uncovered={computerUncovered} selectedProperty={selectedProperty} />
+                    <Card
+                        animal={computer[0]}
+                        uncovered={computerUncovered}
+                        selectedProperty={selectedProperty}
+                    />
                 </div>
             </div>
         );

@@ -1,41 +1,41 @@
 h1 {
-    font-size : 20px;
-    margin    : 0 0 10px 0;
+    font-size: 20px;
+    margin: 0 0 10px 0;
 }
 
 .card {
-    border        : 1px solid black;
-    border-radius : 10px;
-    width         : 200px;
-    margin        : 15px;
-    padding       : 15px;
-    box-shadow    : 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
 
     table {
-        width           : 100%;
-        border-collapse : collapse;
+        width: 100%;
+        border-collapse: collapse;
 
         td {
-            padding : 5px 0;
+            padding: 5px 0;
         }
 
         tr:nth-child(2n-1) {
-            background-color : #ddd;
+            background-color: #ddd;
         }
 
         tr.active {
-            background-color : yellow;
+            background-color: yellow;
         }
     }
 
     img {
-        border-radius : 3px;
-        border        : 1px solid black;
-        margin-bottom : 10px;
+        border-radius: 3px;
+        border: 1px solid black;
+        margin-bottom: 10px;
     }
 
     &.back {
-        height           : 408px;
-        background-color : green;
+        height: 408px;
+        background-color: green;
     }
 }
