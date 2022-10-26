@@ -150,7 +150,7 @@ export default class Game extends React.Component<GameProps, GameState> {
                         animal={player[0]}
                         uncovered={true}
                         selectedProperty={selectedProperty}
-                        onSelectProperty={this.getSelectedPropertyHandler().bind(this)}
+                        onSelectProperty={this.getSelectedPropertyHandler()}
                     />
                     <Card
                         animal={computer[0]}
