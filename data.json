@@ -1,0 +1,44 @@
+{
+  "card": [
+    {
+      "id": 1,
+      "name": "Elefant",
+      "image": "elefant.png",
+      "sie": 3.3,
+      "weight": 6000,
+      "age": 70,
+      "offspring": 1,
+      "speed": 40
+    },
+    {
+      "id": 1,
+      "name": "Flusspferd",
+      "image": "flusspferd.png",
+      "sie": 1.5,
+      "weight": 1800,
+      "age": 50,
+      "offspring": 1,
+      "speed": 30
+    },
+    {
+      "id": 1,
+      "name": "Nashorn",
+      "image": "nashorn.png",
+      "sie": 1.9,
+      "weight": 2300,
+      "age": 50,
+      "offspring": 1,
+      "speed": 50
+    },
+    {
+      "id": 1,
+      "name": "Krokodil",
+      "image": "krokodil.png",
+      "sie": 5.2,
+      "weight": 1000,
+      "age": 70,
+      "offspring": 60,
+      "speed": 29
+    }
+  ]
+}
